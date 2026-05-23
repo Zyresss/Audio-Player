@@ -128,7 +128,7 @@ class _BiometricScreenState extends State<BiometricScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.fingerprint, size: 100, color: Colors.blue),
+            const Icon(Icons.fingerprint, size: 100, color: Colors.indigo),
             const SizedBox(height: 20),
             Text(_authorized, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             const SizedBox(height: 20),

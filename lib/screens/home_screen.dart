@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
     _loadStatsAndGoal(); // Modifié
   }
 
-  // NOUVEAU : Charge l'objectif ET les statistiques réelles
+  // l'objectif ET les statistiques réelles
   Future<void> _loadStatsAndGoal() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
@@ -165,7 +165,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Card(
               elevation: 4,
               child: ListTile(
-                leading: const Icon(Icons.headset, size: 40, color: Colors.blue),
+                leading: const Icon(Icons.headset, size: 40, color: Colors.indigo),
                 title: const Text("Temps total d'écoute"),
                 subtitle: Text(
                   "$totalHours heures et $remainingMinutes minutes",
@@ -199,7 +199,7 @@ class _HomeScreenState extends State<HomeScreen> {
               value: progress,
               minHeight: 10,
               backgroundColor: Colors.grey[300],
-              color: progress >= 1.0 ? Colors.green : Colors.blue,
+              color: progress >= 1.0 ? Colors.green : Colors.indigo,
             ),
             const SizedBox(height: 5),
             Text("${(progress * 100).toStringAsFixed(1)}% de l'objectif atteint"),
@@ -240,7 +240,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       barRods: [
                         BarChartRodData(
                           toY: _dailyListeningData[index],
-                          color: Colors.blue,
+                          color: Colors.indigo,
                           width: 15,
                           borderRadius: BorderRadius.circular(4),
                         )

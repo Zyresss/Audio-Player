@@ -144,7 +144,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       style: TextStyle(color: _selectedDate == null ? Colors.grey[600] : Colors.black, fontSize: 16),
                     ),
                     IconButton(
-                      icon: const Icon(Icons.calendar_month, color: Colors.blue),
+                      icon: const Icon(Icons.calendar_month, color: Colors.indigo),
                       onPressed: () => _selectDate(context),
                     ),
                   ],
